@@ -352,4 +352,5 @@ MigrationBackup/
 #added by me
 .DS_Store
 __MACOSX/
+*/*.exe
 *.exe
