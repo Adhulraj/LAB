@@ -150,7 +150,7 @@ int main()
                 printf("\nEnter the info to be deleted:");
                 scanf("%d", &z);
                 root = del(root, z);
-		break;
+		        break;
             case 3:
                 printf("\nEnter element to be searched:  ");
                 scanf("%d", &element);
