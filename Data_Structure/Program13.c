@@ -52,7 +52,7 @@ void insert()
     {
         if (front == - 1)
         /*If queue is initially empty */
-        front = 0;
+            front = 0;
         printf("Inset the element in queue : ");
         scanf("%d", &add_item);
         rear = rear + 1;
