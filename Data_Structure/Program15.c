@@ -121,15 +121,15 @@ int main()
     printf("\nEnter an element: ");
     scanf("%d", &x);
     root = insert(root, x);
-    printf("\nDo you want to enter another element :y or n");
+    printf("Do you want to enter another element (y or n) : ");
     scanf(" %c",&ch);
     while (ch == 'y')
     {
         printf("\nEnter an element:");
         scanf("%d", &x);
         root = insert(root,x);
-        printf("\nPress y or n to insert another element: y or n: ");
-        scanf("\n %c", &ch);
+        printf("Press y or n to insert another element: y or n: ");
+        scanf("%c", &ch);
     }
     while(1)
     {
@@ -142,26 +142,26 @@ int main()
         switch(c)
         {
             case 1:
-                printf("\nEnter the item:");
+                printf("Enter the item:");
                 scanf("%d", &z);
                 root = insert(root,z);
                 break;
             case 2:
-                printf("\nEnter the info to be deleted:");
+                printf("Enter the info to be deleted:");
                 scanf("%d", &z);
                 root = del(root, z);
 		        break;
             case 3:
-                printf("\nEnter element to be searched:  ");
+                printf("Enter element to be searched:  ");
                 scanf("%d", &element);
                 search(root, element);
                 if(LOC != NULL)
-                    printf("\n%d Found in Binary Search Tree !!\n",element);
+                    printf("%d Found in Binary Search Tree !!\n",element);
                 else
-                    printf("\nIt is not present in Binary Search Tree\n");
+                    printf("It is not present in Binary Search Tree\n");
                 break;
             case 4:
-                printf("\nExiting...");
+                printf("Exiting...");
 		        return 0;
             default:
                 printf("Enter a valid choice: ");

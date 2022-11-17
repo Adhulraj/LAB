@@ -25,7 +25,7 @@ void main()
         switch(choice)
         {
             case 1:
-                printf("Enter the above: ");
+                printf("Enter the data: ");
                 scanf("%d",&item);
                 x=(struct node*)malloc(sizeof(struct node));
                 x->data=item;
@@ -67,15 +67,15 @@ void main()
                     p=p->link;
                     while(p->link!=NULL)
                     {
-                        printf("%d", p->data);
+                        printf("%d ", p->data);
                         p=p->link;
                     }
-                    printf("%d", p->data);
+                    printf("%d ", p->data);
                 }
                 break;
             
             case 4:
-                printf("\n Exit...");
+                printf("Exit...");
         }
     }
             while(choice<4);

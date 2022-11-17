@@ -59,6 +59,8 @@ int main()
     {
         printf("%c",pop());
     }
+    printf("\n");
+    return 0;
 }
 // OUTPUT
 // Enter the expression :: a*b+c

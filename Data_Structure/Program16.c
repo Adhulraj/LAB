@@ -7,7 +7,7 @@ void main()
 {
     int array[5];
     int i, j, temp, n;
-    printf("Enter the limit: \n");
+    printf("Enter the limit: ");
     scanf("%d", &n);
     printf("Enter the Elements: \n");
     for(i=0;i<n;i++)

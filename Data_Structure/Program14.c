@@ -2,16 +2,18 @@
 
 #include<stdio.h>
 #include<conio.h>
+#include<stdlib.h>
+
 void enq();
 void deq();
 void display();
 void main()
 {
     int n;
-    printf("\t Menu\n1.Enqueue\n2.Dequeue\n3.Display\n4.Exit\n");
+    printf("\tMenu\n1.Enqueue\n2.Dequeue\n3.Display\n4.Exit\n");
     do
     {
-        printf("Enter your Choice:\n");
+        printf("Enter your Choice: ");
         scanf("%d", &n);
         switch(n)
         {
@@ -48,7 +50,7 @@ void enq()
 {
     int item;
     n *temp;
-    printf("Enter the item:\n");
+    printf("Enter the item: ");
     scanf("%d", &item);
     temp=(n*)malloc(sizeof(n));
     temp->data=item;
@@ -94,9 +96,10 @@ void display()
     printf("The elements of the Queue are: ");
     while(ptr!=NULL)
     {
-        printf("%d\t", ptr->data);
+        printf("%d  ", ptr->data);
         ptr=ptr->link;
     }
+    printf("\n");
 }
 
 // Output
