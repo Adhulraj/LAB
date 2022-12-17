@@ -5,7 +5,7 @@
 int main()
 {
     int array[100], search, c, number;
-    printf("Enter the number of elements in array\n");
+    printf("Enter the number of elements in array: ");
     scanf("%d",&number);
     printf("Enter %d numbers\n", number);
     for ( c = 0 ; c < number ; c++ )
