@@ -1,3 +1,5 @@
+//Impliment Stack Using Array
+
 #include <stdio.h>
 #include <conio.h>
 int stack[100], choice, n, top, x, i;
@@ -13,7 +15,7 @@ void main()
     printf("\n 1.Push \n 2.Pop \n 3.Display\n 4.Exit \n");
     do
     {
-        printf("\n Enter the choice from menu: \n");
+        printf("\n Enter the choice from menu: ");
         scanf("%d", &choice);
         switch (choice)
         {
@@ -68,7 +70,7 @@ void pop()
     }
     else
     {
-        printf("\n \t Popped element is: %d", stack[top]);
+        printf("\nPopped element is: %d", stack[top]);
         top--;
     }
 }
