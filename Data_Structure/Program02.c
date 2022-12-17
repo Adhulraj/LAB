@@ -1,9 +1,9 @@
 /*
-        REVERSE OF A STRING USING POINTERS
+        SEARCH AN ELEMENT IN 2D ARRAY
     -----------------------------------------
 
     AIM :
-        Program to reverse a string using pointers
+        Program to search an element in 2D array
 
     ALGORITHM :
 
