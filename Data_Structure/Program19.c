@@ -6,10 +6,10 @@ void main()
     char city[5][20];
     int i,j;
     // clrscr();
-    printf("Enter the Names to Sort: \n\n");
+    printf("Enter the Names to Sort: \n");
     for(i=0; i<5; i++)
         scanf("%s",&city[i]);
-    printf("Sorted list of Names are: \n\n");
+    printf("Sorted list of Names are: \n");
     for(i=65; i<122; i++)
     {
         for(j=0; j<5; j++)
