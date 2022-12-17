@@ -6,7 +6,7 @@
 int main()
 {
 int a[100], n, i, j, position, swap;
-printf("Enter number of elements: \n");
+printf("Enter number of elements: ");
 scanf("%d", &n);
 printf("Enter %d Numbers: \n", n);
 for (i = 0; i < n; i++)
