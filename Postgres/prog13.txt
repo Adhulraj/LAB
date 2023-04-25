@@ -1,0 +1,35 @@
+WHOLE NUMBERS
+
+DO $$
+BEGIN
+FOR counter IN 1..100 LOOP
+RAISE NOTICE '%', counter;
+END LOOP;
+END;
+$$ LANGUAGE plpgsql;
+
+
+ODD NUMBERS
+
+DO $$
+BEGIN
+FOR counter IN 1..100 LOOP
+IF(counter%2=1) THEN
+RAISE NOTICE 'odd:%', counter;
+END IF;
+END LOOP;
+END;
+$$ LANGUAGE plpgsql;
+
+
+EVEN NUMBERS
+
+DO $$
+BEGIN
+FOR counter IN 1..100 LOOP
+IF(counter%2=0) THEN
+RAISE NOTICE 'Even: %', counter;
+END IF;
+END LOOP;
+END;
+$$ LANGUAGE plpgsql;

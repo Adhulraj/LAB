@@ -1,0 +1,11 @@
+CREATE TABLE sales_man(salesman_no INT NOT NULL PRIMARY KEY, s_name VARCHAR(15) NOT NULL, place VARCHAR(10), phone INT, UNIQUE(phone));
+ CREATE TABLE sales_order(order_no INT NOT NULL PRIMARY KEY, order_date DATE, salesman_no INT, del_type CHAR CHECK(del_type IN ('P','F')), order_status VARCHAR(15) CHECK(order_status IN('Inprocess','Fullfilled','Backorder','Cancelled')), FOREIGN KEY(salesman_no) REFERENCES sales_man(salesman_no));
+INSERT INTO sales_man VALUES (001, 'Sanitha','ABC',123456), (002, 'Ram', 'XYZ',56890);
+ INSERT INTO sales_order VALUES (100, '01/02/2022', 001,'P','Fullfilled'), (101, '02/03/2022',002, 'F', 'Cancelled');
+ ALTER TABLE sales_order DROP CONSTRAINT sales_order_salesman_no_fkey ;
+ ALTER TABLE sales_man DROP CONSTRAINT sales_man_pkey;
+ ALTER TABLE sales_order DROP CONSTRAINT sales_order_del_type_check;
+ALTER TABLE sales_order DROP CONSTRAINT sales_order_order_status_check;
+ALTER TABLE sales_man ADD PRIMARY KEY (salesman_no);
+ALTER TABLE sales_order ADD CHECK (order_status IN('Inprocess','Fullfilled','Backorder','Cancelled'));
+ALTER TABLE sales_order ADD CHECK (del_type IN ('P','F'));
