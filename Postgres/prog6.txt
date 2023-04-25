@@ -1,0 +1,8 @@
+ CREATE TABLE product(pcode INT PRIMARY KEY, pname VARCHAR(25), cat VARCHAR(25), qty INT, price INT);
+INSERT INTO product VALUES (111, 'Hamam', 'Bath soap', 25, 30), (112, 'Colgate', 'Paste', 50, 30),(113, 'Sunlight', 'Washing powder', 75, 150),(114, 'Yadley', 'Talc', 60, 80), (115, 'Santhoor', 'Bath soap', 30, 25);
+ SELECT * FROM product ORDER BY pname DESC;
+SELECT pcode, pname FROM product WHERE price BETWEEN 20 AND 50;
+ SELECT * FROM product WHERE cat = 'Bath soap' OR cat = 'Washing powder';
+ SELECT pname FROM product WHERE pname LIKE 'S%';
+ SELECT pname FROM product WHERE NOT cat = 'Paste';
+SELECT pname FROM product WHERE pname LIKE '_u%' AND cat = 'Washing powder';

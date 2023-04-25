@@ -1,0 +1,15 @@
+ALTER TABLE employee RENAME TO employee1;
+ CREATE TABLE employee (ename VARCHAR(20), city VARCHAR(10));
+ CREATE TABLE works(ename VARCHAR(20), cname VARCHAR(20), sal INT);
+ CREATE TABLE company(cname VARCHAR(20), city VARCHAR(10));
+CREATE TABLE manager(ename VARCHAR(20), mname VARCHAR(20));
+INSERT INTO employee VALUES ('Ram', 'Ekm'),('Shyam', 'Ktym'),('Manu', 'Ekm');
+INSERT INTO works VALUES ('Ram', 'Infosys', 100000),('Shyam', 'Wipro', 200000),('Manu', 'Infosys', 100000);
+INSERT INTO company VALUES ('Infosys', 'Ekm'), ('Wipro', 'Tsr');
+INSERT INTO manager VALUE ('Ram', 'Arun'),('Shyam', 'Raj'), ('Manu', 'Sharath');
+SELECT ename, cname FROM works WHERE cname = 'Wipro';
+ SELECT employee.ename, city FROM works, employee WHERE cname = 'Wipro' AND employee.ename = works.ename;
+SELECT employee.ename, city FROM works , employee WHERE (cname = 'Infosys' AND sal > 10000) AND employee.ename = works.ename;
+SELECT employee.ename, employee.city FROM employee, company WHERE employee.city = company.city;
+ SELECT ename FROM works WHERE NOT cname = 'Wipro';
+SELECT COUNT(ename), cname FROM works GROUP BY cname;

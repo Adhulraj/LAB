@@ -1,0 +1,46 @@
+CREATE TABLE electricity(cno INT, cname VARCHAR(20), unitconsumed INT, billamnt INT);
+INSERT INTO electricity VALUES (1, 'anand', 10);
+NSERT INTO electricity VALUES (2, 'abinand', 60);
+INSERT INTO electricity VALUES (3, 'nima', 110);
+INSERT INTO electricity VALUES (4, 'neethu', 160);
+INSERT INTO electricity VALUES (5, 'abitha', 210);
+INSERT INTO electricity VALUES (4, 'neethu', 160);
+
+
+DO
+$$
+DECLARE
+c3 CURSOR FOR SELECT cno, unitconsumed FROM electricity;
+c_no electricity.cno%TYPE;
+u_consumed electricity.unitconsumed%TYPE;
+rec RECORD;
+BEGIN
+OPEN c3;
+LOOP
+FETCH c3 INTO rec;
+EXIT WHEN NOT FOUND;
+c_no:=rec.cno;
+u_consumed:=rec.unitconsumed;
+IF u_consumed>=0 AND u_consumed<=50 THEN
+UPDATE electricity SET billamnt=u_consumed*2.8 WHERE cno=c_no;
+ELSIF u_consumed>=51 AND u_consumed<=100 THEN
+UPDATE electricity SET billamnt=(50*2.8)+(u_consumed-50)*2.8 WHERE cno=c_no;
+ELSIF u_consumed>=101 AND u_consumed<=150 THEN
+UPDATE electricity SET billamnt=(50*2.8)+(50*3.2)+(u_consumed-100)*4.2 WHERE cno=c_no;
+ELSIF u_consumed>=151 AND u_consumed<=200 THEN
+UPDATE electricity SET billamnt=(50*2.8)+(50*3.2)+(50*4.2)+(u_consumed-150)*5.8 WHERE cno=c_no;
+ELSIF u_consumed>=201 AND u_consumed<=250 THEN
+UPDATE electricity SET billamnt=(50*2.8)+(50*3.2)+(50*4.2)+(50*5.8)+(u_consumed-200)*7 WHERE cno=c_no;
+ELSE
+
+UPDATE electricity SET billamnt=(50*2.8)+(50*3.2)+(50*4.2)+(50*5.8)+(50*7)+(u_consumed-250)*7.5 WHERE cno=c_no;
+
+END IF;
+END LOOP;
+CLOSE c3;
+END;
+$$
+LANGUAGE plpgsql;
+
+
+SELECT * FROM electricity;

@@ -1,0 +1,21 @@
+CREATE DATABASE trading;
+\c trading
+CREATE TABLE cust_master(cust_no INT NOT NULL, cust_name VARCHAR(20) NOT NULL, cust_add VARCHAR(20), cust_pin INT, PRIMARY KEY(cust_no));
+
+CREATE TABLE order_master(order_no INT NOT NULL, order_date DATE NOT NULL, cust_no INT REFERENCES cust_master, order_amnt INT, PRIMARY KEY(order_no));
+CREATE TABLE item(item_no VARCHAR(20) NOT NULL, unit_price INT NOT NULL, PRIMARY KEY (item_no));
+CREATE TABLE order_details(line_no INT NOT NULL, od_no INT NOT NULL, item_no VARCHAR(20) NOT NULL REFERENCES item, qty INT NOT NULL, PRIMARY KEY(line_no, od_no));
+CREATE TABLE shipment(or_no INT NOT NULL, wrehse_no INT NOT NULL, ship_date DATE NOT NULL, PRIMARY KEY (or_no, wrehse_no));
+CREATE TABLE warehouse(wh_no INT, city VARCHAR(20) NOT NULL, PRIMARY KEY(wh_no));
+INSERT INTO cust_master VALUES (123,'Aravind','Palace Road',68001),(124,'Hari','Netaji Road', 680002), (125,'Balu','Gandhi Nagar',680003), (126,'Sree','Indira Nagar', 680004), (127,'Don','West Fort', 680005);
+ INSERT INTO order_master VALUES  (001, '2018/11/28',123,5000), (002, '2018/11/23',123,8000), (003, '2018/11/20',124,10000), (004, '2018/11/20', 127, 5000),(005, '2018/11/15', 127, 7500);
+INSERT INTO item VALUES('item1', 1500),('item2', 1300), ('item3', 500),('item4', 1000),('item5', 2000);
+INSERT INTO order_details VALUES(2000, 001, 'item1', 100),(2001, 002, 'item2', 50),(2002, 003, 'item3', 100),(2003, 004, 'item4', 100),(2004, 005, 'item5', 100);
+INSERT INTO shipment VALUES (001, 1111, '2019/01/10'),(002, 2222, '2019/01/11'), (003, 3333, '2019/01/25'), (004, 4444, '2019/01/20'),(005, 5555, '2019/01/22');
+INSERT INTO warehouse VALUES (1111, 'Thrissur'),(2222, 'Thrissue'), (3333, 'Cochin'), (4444, 'Cochin'), (5555, 'Palakad');
+ SELECT cust_name, COUNT(order_no) AS NoOfOrders, AVG(order_master.order_amnt) AS AverageOrderAmount FROM cust_master ,order_master WHERE cust_master.cust_no = order_master.cust_no GROUP BY cust_name;
+SELECT or_no, city FROM shipment , warehouse WHERE shipment.wrehse_no = warehouse.wh_no AND warehouse.city = 'Thrissur';
+DELETE FROM order_details WHERE item_no IN('item2');
+DELETE FROM item where item_no = 'item2';
+ SELECT * FROM order_details ;
+ SELECT * FROM item;

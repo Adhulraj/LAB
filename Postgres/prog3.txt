@@ -1,0 +1,8 @@
+CREATE TABLE hospital(doctorid VARCHAR(4) NOT NULL, doctorname VARCHAR(20), department VARCHAR(15), qualification VARCHAR(10), experience INT);
+ INSERT INTO hospital VALUES ('D001', 'Dr.A', 'Skin','MD',2),('D002', 'Dr.B', 'Ortho', 'MBBS', 5), ('D003', 'Dr.C', 'Skin', 'MBBS', 8), ('D004', 'Dr.D', 'Gyne', 'MD', 5),( 'D005', 'Dr.E', 'Ent', 'MBBS', 6);
+SELECT * FROM hospital;
+ SELECT * FROM hospital WHERE qualification = 'MD';
+ SELECT * FROM hospital WHERE experience > 5 AND qualification != 'MD';
+ SELECT * FROM hospital WHERE department = 'Skin';
+UPDATE hospital SET experience = 5 WHERE doctorid = 'DOO3';
+DELETE FROM hospital WHERE doctorid = 'D005';

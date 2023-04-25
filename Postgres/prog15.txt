@@ -1,0 +1,16 @@
+CREATE TABLE hospital(pid VARCHAR(10), pname VARCHAR(20), age INT, doc VARCHAR(20), ptype VARCHAR(15), conschrg INT, bldtstchrg INT, xraychrg INT, other INT, total INT);
+
+INSERT INTO hospital VALUES
+('p01', 'Rahul', 20, 'Dr Ram', 'IP', 200, 100, 150,50, 500),
+('p02', 'John', 39, 'Dr Samuel', 'OP', 200, 0, 150, 50, 400),
+('p03', 'Sana', 26, 'Dr Rebeeca', 'IP', 200, 100, 0, 50 , 350),
+('p04', 'Alexa', 50, 'Dr Ram', 'OP', 200, 100, 150, 50 , 500),
+('p05', 'Ammini', 90, 'Dr Aysha', 'IP', 200, 100, 150, 50, 500),
+('p06', 'Rizana',35, 'Dr Nasar', 'OP', 200, 0, 150, 50, 350),
+('p07', 'Aysha', 21, 'Dr Shibu', 'OP', 200, 0, 150, 50, 400),
+('p08', 'Fathima', 22, 'Dr Muneer', 'IP', 200, 0, 0, 0, 200),
+('p09', 'Riya', 24, 'Dr Rafeena', 'IP', 200, 100, 150, 50, 500),
+( 'p10', 'Harry', 25, 'Dr Raeza', 'OP', 200, 100, 0, 0, 800);
+
+SELECT * FROM hospital WHERE bldtstchrg != 0;
+SELECT * FROM hospital WHERE xraychrg != 0;

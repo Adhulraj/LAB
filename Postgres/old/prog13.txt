@@ -1,0 +1,14 @@
+CREATE TABLE shop(item_id INT, item_name CHAR(10), price NUMERIC(10,2), qty NUMERIC(5,2));
+INSERT INTO shop VALUES  (101, 'Powder', 64, 5),(102, 'Rice', 32.5, 5),(103, 'Milk', 20, 1);
+
+
+CREATE OR REPLACE FUNCTION sales(iid INT, quantity NUMERIC(5,2)) RETURNS INTEGER AS
+$$
+BEGIN
+UPDATE shop SET qty = quantity WHERE item_id = iid;
+RETURN NULL;
+END;
+$$LANGUAGE plpgsql;
+
+ SELECT sales(102,6.5);
+  SELECT * FROM shop ;

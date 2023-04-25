@@ -1,0 +1,16 @@
+CREATE TABLE area(r INT, area FLOAT);
+DO $$
+DECLARE
+r INTEGER;
+area FLOAT;
+pi FLOAT:= 3.14;
+BEGIN
+r:=3;
+WHILE r<=7 LOOP
+area:= pi*power(r,2);
+INSERT INTO area VALUES(r,area);
+r:=r+1;
+END LOOP;
+END;
+$$ LANGUAGE plpgsql;
+SELECT * FROM area ;

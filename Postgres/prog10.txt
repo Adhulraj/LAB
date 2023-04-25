@@ -1,0 +1,21 @@
+DO $$
+DECLARE
+t1 INTEGER:= 0;
+t2 INTEGER:= 1;
+
+t3 INTEGER;
+n INTEGER:= 9;
+i INTEGER;
+BEGIN
+RAISE NOTICE 'Fibinacci Series is : ';
+RAISE NOTICE '%', t1;
+RAISE NOTICE '%', t2;
+FOR I IN 2..n
+LOOP
+t3=t1+t2;
+RAISE NOTICE '%', t3;
+t1:=t2;
+t2:=t3;
+END LOOP;
+END;
+$$ LANGUAGE plpgsql;

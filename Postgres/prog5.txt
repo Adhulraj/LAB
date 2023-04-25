@@ -1,0 +1,10 @@
+CREATE TABLE employee(empid INT, ename VARCHAR(20), salary INT, dept VARCHAR(15), age INT);
+INSERT INTO employee VALUES (001, 'A', 100000, 'Purchase', 25), (002, 'B', 200000, 'Purchase', 30),(003, 'C', 300000, 'Sales', 35),(005, 'D', 400000, 'Sales', 25),(004, 'E', 500000, 'HR', 40);
+SELECT COUNT(empid) FROM employee ;
+SELECT ename, age FROM employee WHERE age = (SELECT MAX(age) FROM employee p WHERE employee.dept = p.dept);
+SELECT AVG(age) FROM employee GROUP BY dept;
+SELECT dept, AVG(salary) FROM employee GROUP BY dept;
+SELECT MIN(salary) FROM employee ;
+ SELECT COUNT(empid) FROM employee WHERE dept = 'Purchase';
+ SELECT MAX(salary) FROM employee WHERE dept = 'Sales';
+ SELECT MAX(salary) - MIN(salary) AS DIFFERENCE FROM employee ;

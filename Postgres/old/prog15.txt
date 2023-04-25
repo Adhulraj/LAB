@@ -1,0 +1,12 @@
+DO
+$$
+DECLARE
+i INTEGER:=0;
+BEGIN
+RAISE NOTICE 'Even Number From 1 to 100';
+WHILE i<100 LOOP
+i:=i+2;
+RAISE NOTICE '%' ,i;
+END LOOP;
+END;
+$$ LANGUAGE plpgsql;

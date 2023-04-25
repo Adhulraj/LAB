@@ -1,0 +1,14 @@
+CREATE TABLE customer(cust_no VARCHAR(5), cust_name VARCHAR(15), age INT, phone VARCHAR(10));
+INSERT INTO customer VALUES(123,'sanitha', 24, 123456);
+INSERT INTO customer VALUES(124,'ram', 30, 234456);
+INSERT INTO customer VALUES(125,'kiran', 32, 798456);
+INSERT INTO customer VALUES(126,'jisy', 31, 534456);
+INSERT INTO customer VALUES(127,'athul', 29, 809856);
+
+ALTER TABLE customer ADD COLUMN d_birth DATE;
+CREATE TABLE cust_phone(cust_name VARCHAR(15), phone VARCHAR(10));
+ALTER TABLE customer DROP COLUMN age;
+ALTER TABLE customer ALTER COLUMN cust_name TYPE VARCHAR(25);
+DELETE FROM customer;
+ALTER TABLE customer RENAME TO cust;
+DROP TABLE cust;

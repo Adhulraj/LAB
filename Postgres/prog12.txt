@@ -1,0 +1,24 @@
+CREATE TABLE empsal(empno INT PRIMARY KEY, ename VARCHAR(10), dept VARCHAR(10), salary INT);
+INSERT INTO empsal VALUES (1, 'anu', 'sales', 10000);
+INSERT INTO empsal VALUES (2, 'sinu', 'HR', 20000);
+INSERT INTO empsal VALUES (3, 'manu', 'sales', 30000);
+INSERT INTO empsal VALUES (4, 'sanu', 'IT', 40000);
+INSERT INTO empsal VALUES (5, 'nanu', 'sales', 30000);
+INSERT INTO empsal VALUES (6, 'priya', 'HR', 25000);
+INSERT INTO empsal VALUES (7, 'vinu', 'IT', 50000);
+
+CREATE OR REPLACE FUNCTION salcal(d VARCHAR) RETURNS NUMERIC AS $$
+DECLARE
+av  NUMERIC;
+cur CURSOR FOR SELECT ROUND(AVG(salary)) FROM empsal WHERE dept = d;
+BEGIN
+OPEN cur;
+FETCH cur INTO av;
+RETURN av;
+
+CLOSE cur;
+END;
+$$ LANGUAGE plpgsql;
+
+SELECT salcal('IT');
+
