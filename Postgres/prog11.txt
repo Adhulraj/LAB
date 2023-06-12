@@ -1,0 +1,52 @@
+DO $$
+DECLARE
+n INTEGER;
+i INTEGER;
+t INTEGER;
+BEGIN
+n:=13;
+i:=2;
+t:=1;
+FOR I IN 2..n/2
+LOOP
+IF MOD(n,i)=0 THEN
+t:=0;
+EXIT;
+END IF;
+END LOOP;
+IF t=1 THEN
+RAISE NOTICE 'The number is Prime';
+ELSE
+RAISE NOTICE 'The number is not Prime';
+END IF;
+END;
+$$ LANGUAGE plpgsql;
+CREATE OR REPLACE FUNCTION isprime(x IN INTEGER) RETURNS INTEGER AS $$
+DECLARE
+i INTEGER;
+count INTEGER;
+BEGIN
+count:=0;
+FOR i IN 2..x/2 LOOP
+IF MOD(x,i)=0 THEN
+count:=count+1;
+END IF;
+END LOOP;
+RETURN count;
+END;
+$$ LANGUAGE plpgsql;
+
+DO $$
+DECLARE
+n INTEGER;
+c INTEGER;
+BEGIN
+n:=14;
+c:=isprime(n);
+if c=0 THEN
+RAISE NOTICE 'The number is Prime';
+ELSE
+RAISE NOTICE 'The number is not Prime';
+END IF ;
+END;
+$$ LANGUAGE plpgsql;

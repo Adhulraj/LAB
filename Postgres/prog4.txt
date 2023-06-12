@@ -1,0 +1,11 @@
+ CREATE TABLE bank_customer(accno INT NOT NULL PRIMARY KEY, cust_name VARCHAR(20), place VARCHAR(10));
+ CREATE TABLE deposit(accno INT, deposit_no INT, Damount INT, FOREIGN KEY (accno) REFERENCES bank_customer(accno));
+ CREATE TABLE loan(accno INT, loan_no INT, Lamount INT, FOREIGN KEY (accno) REFERENCES bank_customer(accno));
+ INSERT INTO bank_customer VALUES (101, 'Athul', 'Varavoor'),(102, 'Vishnu', 'Vapi'),(103, 'Vivek', 'Vapi'),(104, 'Sarang', 'Palakad'),(105, 'Sageeth', 'Dadra'),(106, 'Aswin', 'Kochi'),(107, 'Ujwal', 'Chennai');
+ INSERT INTO deposit VALUES(102, 1001, 20000),(104, 1002, 10000);
+INSERT INTO loan VALUES(103, 2001, 20000),(105, 2002, 10000),107, 2003, 3000),(104, 2004, 400);
+SELECT * FROM bank_customer;
+SELECT cust_name, Damount FROM bank_customer , deposit WHERE bank_customer.accno = deposit.accno;
+SELECT cust_name, Lamount FROM bank_customer , loan WHERE bank_customer.accno = loan.accno;
+ SELECT cust_name FROM bank_customer , deposit, loan WHERE bank_customer.accno = deposit.accno AND bank_customer.accno = loan.accno;
+SELECT cust_name FROM bank_customer WHERE accno NOT IN (SELECT accno FROM loan UNION SELECT accno FROM deposit);

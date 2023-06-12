@@ -1,0 +1,12 @@
+DO $$
+DECLARE
+t2 INTEGER:= 0;
+BEGIN
+RAISE NOTICE
+'Whole Numbers from 1 to 100';
+WHILE t2<=100 LOOP
+t2=t2+1;
+RAISE NOTICE '%', t2;
+END LOOP;
+END;
+$$ LANGUAGE plpgsql;
