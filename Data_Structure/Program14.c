@@ -89,8 +89,10 @@ void deq()
 void display()
 {
     n*ptr;
-    if(front==NULL)
-    printf("Queue is Empty!\n");
+    if(front==NULL){
+        printf("Queue is Empty!\n");
+        return;
+    }
     else
     ptr=front;
     printf("The elements of the Queue are: ");
