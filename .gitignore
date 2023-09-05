@@ -354,4 +354,5 @@ MigrationBackup/
 __MACOSX/
 */*.exe
 *.exe
-
+*/*.class
+*.class
