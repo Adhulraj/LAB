@@ -5,7 +5,11 @@
  * 
  * ALGORITHM:
  * 	Step 01: START
- * 	Step 02:
+ * 	Step 02: Declare a,b,sum,mul,quo,diff,rem
+ * 	Step 03: Read a,b
+ * 	Step 04: Calculate the sum, difference, product, quotient, and remainder of  a,b.
+ * 	Step 05: Display results
+ * 	Step 06: STOP
  */
 import java.io.*;
 import java.util.*;
@@ -29,7 +33,12 @@ public class Operation {
 }
 
 /*
- * OUTPUT
+ * OUTPUT (java Operation 20 10)
  * 
+The sum = 30
+The diff = 10
+The product = 200
+The quo = 2
+The rem = 0
  * 
  */
