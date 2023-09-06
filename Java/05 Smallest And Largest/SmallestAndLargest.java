@@ -7,12 +7,11 @@ ALGORITHM:
     Step 02: Read n
     Step 03: Declare array[n]
     Step 04: Read array[n]
-    Step 05: for i=0 untill i<n loop Step 06
+    Step 05: for i=0 until i<n loop Step 06
     Step 06:    for j=0 until j<n-1 loop Step 07
-    Step 07:        if array[j]>array[j+1] goto Step 08 else goto Step 09
-    Step 08:            Swap array[j] and array[j+1]
-    Step 09: Print array[0],array[n-2],array[n-1] as smallest,second largest and largest
-    Step 10: STOP
+    Step 07:        if array[j]>array[j+1] then Swap array[j] and array[j+1]         
+    Step 08: Print array[0],array[n-2],array[n-1] as smallest,second largest and largest
+    Step 09: STOP
  */
 
 //  import java.io.*;

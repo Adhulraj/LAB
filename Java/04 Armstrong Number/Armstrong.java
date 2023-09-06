@@ -20,7 +20,7 @@ ALGORITHM:
 public class Armstrong {
     public static void main(String[] args) {
         Scanner s= new Scanner(System.in);
-        System.out.println("Enter the lower an dupper limit: ");
+        System.out.println("Enter the lower and dupper limit: ");
         int low = s.nextInt();
         int high = s.nextInt();
         System.out.println("Armstrong numbers within "+low+" and "+high+" is ");
@@ -40,7 +40,7 @@ public class Armstrong {
 }
 /*
  OUTPUT
-Enter the lower an dupper limit:
+Enter the lower and dupper limit:
 0
 1000
 Armstrong numbers within 0 and 1000 is
