@@ -1,15 +1,15 @@
 /*
- * AIM:
- * Write a program to find sum, differnce, product, quotient an dremainder of two numbers passed as command line
- * 
- * 
- * ALGORITHM:
- * 	Step 01: START
- * 	Step 02: Declare a,b,sum,mul,quo,diff,rem
- * 	Step 03: Read a,b
- * 	Step 04: Calculate the sum, difference, product, quotient, and remainder of  a,b.
- * 	Step 05: Display results
- * 	Step 06: STOP
+ AIM:
+ To write a program to find sum, differnce, product, quotient and remainder of two numbers passed as command line
+ 
+ 
+ ALGORITHM:
+ 	Step 01: START
+ 	Step 02: Declare a,b,sum,mul,quo,diff,rem
+ 	Step 03: Read a,b
+ 	Step 04: Calculate the sum, difference, product, quotient and remainder of  a,b.
+ 	Step 05: Display results
+ 	Step 06: STOP
  */
 import java.io.*;
 // import java.util.*;

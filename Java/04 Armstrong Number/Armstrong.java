@@ -1,15 +1,15 @@
 /*
  AIM:
-  to write a program to find th armstrong numbers within a range
+  To write a program to find the armstrong numbers within a range
 
 ALGORITHM:
     Step 01: START
     Step 02: Read limits low,high
     Step 03: for i=low+1 until i<high loop Step 04 to Step 08
     Step 04:    Declare num=0,dig=Math.log10(i)+1
-    Step 05:    for temp=1 until temp!=0 loop Step 06 
+    Step 05:    for temp=1 until temp!=0 loop Step 06 and Step 07
     Step 06:        Declare rem= temp%10
-    Step 07:        Set num = num + Math(rem,dig)
+    Step 07:        Set num = num + Math.pow(rem,dig)
     Step 08:    if i==num Print i
     Step 09: STOP
  */ 

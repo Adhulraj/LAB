@@ -1,6 +1,6 @@
 /* 
 AIM :
-    Write a java program to claculate distance between two points
+    To write a java program to calculate distance between two points
 
  ALGORITHM:
     Step 1:START
