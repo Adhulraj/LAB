@@ -8,8 +8,8 @@
 	Step 03: Read n
 	Step 04: print 0
 	Step 05: while n>1 loop Step 06 and Step 07
-	Step 06: Print c
-	Step 07: Set a=b,b=c,n=n-1
+	Step 06: 	Print c
+	Step 07: 	Set a=b,b=c,n=n-1
 	Step 08: STOP
  */
 
