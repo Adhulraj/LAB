@@ -1,1 +1,1 @@
-Computer Lab Programmes for Bsc Computer Science for the year 2021-24.
+Computer Lab Programmes for Bsc Computer Science for the academic year 2019
