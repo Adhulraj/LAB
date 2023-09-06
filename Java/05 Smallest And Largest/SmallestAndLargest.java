@@ -15,7 +15,7 @@ ALGORITHM:
     Step 10: STOP
  */
 
- import java.io.*;
+//  import java.io.*;
  import java.util.Scanner;
 
 public class SmallestAndLargest {
