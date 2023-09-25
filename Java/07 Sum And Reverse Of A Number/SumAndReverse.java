@@ -1,6 +1,9 @@
 /*
 AIM
-
+    Read an array of 10 or more numbers and write a program to find the 
+        a) Smallest element in array
+        b) Largest element in array
+        c) Second largest element in the array
 
 ALGORITHM
 Step 01: START
