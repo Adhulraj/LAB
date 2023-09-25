@@ -1,6 +1,6 @@
 /*
  AIM:
-    Display the smallest, largest and second largest number from an array
+    To display the smallest, largest and second largest number from an array
 
 ALGORITHM:
     Step 01:START
