@@ -3,7 +3,12 @@
     To write a java program to display the total an grade of studnts, creating object class results
     
 ALGORITHM
-
+    Step 01: START
+    Step 02: Create an object of the Results class.
+    Step 03: Call the readStudentDetails() method on the object to read the student details.
+    Step 04: Call the markTotalAndPerc() method on the object to calculate the total marks and grade of the student.
+    Step 05: Call the displayStudentDetails() method on the object to display the student details, including the total marks and grade.
+    Step 06: STOP
  */
 
  import java.util.Scanner;
@@ -64,3 +69,26 @@ public class Results extends Student {
         res.displayStudentDetails();
     }
 }
+
+/*
+ OUTPUT
+
+Enter register number : 101
+Enter student name : Alen
+Enter student age : 20
+Enter course : Bsc CS
+Enter the marks of five subjects (out of 100) :
+98 99 97 96 99
+
+Register Number : 101
+Student Name : Alen
+Student Age : 20
+Course : Bsc CS
+Subject 1 : 98
+Subject 2 : 99
+Subject 3 : 97
+Subject 4 : 96
+Subject 5 : 99
+Total Marks : 489
+Student Grade : A+
+ */
