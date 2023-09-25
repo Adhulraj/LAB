@@ -7,16 +7,16 @@ AIM
 
 ALGORITHM
 
-Step 01: START
-Step 02: Get the base 10 number and the base to be converted to from the user.
-Step 03: Initialize an array to store the result.
-Step 04: Iterate over the base 10 number, one digit at a time, using a do-while loop.
-Step 05: For each digit, find the remainder after dividing the number by the base to be converted to.
-Step 06: Convert the remainder to a character using the ASCII table.
-Step 07: Add the character to the result array.
-Step 08: Divide the number by the base to be converted to.
-Step 09: Continue iterating until the number is 0.
-Step 10: Print the result array in reverse order.
+    Step 01: START
+    Step 02: Get the base 10 number and the base to be converted to from the user.
+    Step 03: Initialize an array to store the result.
+    Step 04: Iterate over the base 10 number, one digit at a time, using a do-while loop.
+    Step 05: For each digit, find the remainder after dividing the number by the base to be converted to.
+    Step 06: Convert the remainder to a character using the ASCII table.
+    Step 07: Add the character to the result array.
+    Step 08: Divide the number by the base to be converted to.
+    Step 09: Continue iterating until the number is 0.
+    Step 10: Print the result array in reverse order.
  
  */
 
