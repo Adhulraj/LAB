@@ -1,6 +1,6 @@
 /*
  AIM
-    To write a java program to display the total an grade of studnts, creating object class results
+    To write a java program to display the total and grade of students, creating object class results
     
 ALGORITHM
     Step 01: START
