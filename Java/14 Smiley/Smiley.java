@@ -4,7 +4,7 @@ import java.applet.*;
 import java.awt.*;
 
 public class Smiley extends Applet{
-    public void print(Graphics g){
+    public void paint(Graphics g){
         g.drawOval(80, 70, 150, 150);
         g.setColor(Color.RED);
         g.fillOval(120, 120, 15, 15);
