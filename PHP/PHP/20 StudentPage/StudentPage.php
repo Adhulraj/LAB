@@ -19,7 +19,7 @@ student by accepting the register no of the student.
 if($_POST)
 {
 $rg=$_POST['txtreg'];
-$con=pg_connect("host=localhost dbname=mes user=postgres password=4351") ;
+$con=pg_connect("host=localhost dbname=mes user=postgres password=pass123") ;
 
 if($con)
 {

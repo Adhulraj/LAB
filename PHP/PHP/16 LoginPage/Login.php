@@ -20,7 +20,7 @@ if($_POST)
 $usrl=$_POST['usr'];
 $paswd=$_POST['pass'];
 
-$con=pg_connect("host=localhost dbname=mes user=postgres password=4351") ;
+$con=pg_connect("host=localhost dbname=mes user=postgres password=pass123") ;
 
 if($con)
 {
