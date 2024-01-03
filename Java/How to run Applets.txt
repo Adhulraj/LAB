@@ -1,0 +1,9 @@
+applet class : sun.applet.AppletViewer
+
+change class file version : javac <java file> --target 8
+this changes class file to 52
+
+install java exe file 
+
+run applet via : java sun.applet.AppletViewer <url(applet.html)>
+
