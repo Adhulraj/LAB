@@ -1,8 +1,28 @@
 //TODO OUTPUT
 
+// AIM
+
+// Write a program to track keyboard events on an applet.
+
+// Algorithm
+// Step 01 : Start
+// Step 02 : Create a class that extends applet and implements KeyListener
+// Step 03 : Initialize the applet
+// Step 04 : Associate KeyListener with the required components
+// Step 05 : Display the frame
+// Step 06 : The methods getKeyCode() & getKeyChar() give the unicode and character representation of the key pressed respectively
+// Step 07 : Use these methods to display the necessary messages in the status bar
+// Step 08 : Stop
+
 import java.awt.*;
 import java.awt.event.*;
 import java.applet.*;
+
+/* 
+<applet code=Key.class width=500 height=500>
+</applet>
+*/
+
 public class Key extends Applet implements KeyListener{
     int x=20, y=30;
     String msg = "KeyEvents -- > ";

@@ -1,16 +1,29 @@
 ///No OUTPUT
 
+// AIM 
+
+// Create an AWT application to add, remove items in a list
+
+// Algorithm
+// Step 01 : Start
+// Step 02 : Create a class inheriting class JFrame and interface ActionListener
+// Step 03 : Initialize the frame
+// Step 04 : Create a list module and add elements
+// Step 05 : Add buttons to frame and attach action listeners
+// Step 06 : Perform the actions: add item, remove item & clears the list using the method actionPerformed() and ActionEvent
+// Step 07 : Display the frame
+// Step 08 : Stop
+
 import javax.swing.*;
 import javax.swing.event.*;
 import java.awt.*;
 import java.awt.event.*;
 
-
-public class MyList extends JFrame implements ActionListener{
+public class MyList extends JFrame implements ActionListener {
     JList l1;
     JTextField t1;
     JButton b1, b2, b3;
-    
+
     int ret;
     DefaultListModel listModel;
 
@@ -18,18 +31,20 @@ public class MyList extends JFrame implements ActionListener{
         setTitle("Adding or Removing Items from JList");
         setLayout(new FlowLayout());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        listModel = new DefaultListModel<> ();
+
+        listModel = new DefaultListModel<>();
         listModel.addElement("Ronaldo");
         listModel.addElement("Messi");
         listModel.addElement("Mbappe");
+        listModel.addElement("Mbappe");
 
-        //creating list
+        // creating list
         l1 = new JList<>(listModel);
 
-        //creating text field 
+        // creating text field
         t1 = new JTextField(10);
 
-        //creating buttons
+        // creating buttons
         b1 = new JButton("ADD");
         b1.addActionListener(this);
 
@@ -41,7 +56,7 @@ public class MyList extends JFrame implements ActionListener{
         b3.addActionListener(this);
         b3.setActionCommand("clear");
 
-        //adding jlist to a scrollpane
+        // adding jlist to a scrollpane
         JScrollPane js = new JScrollPane(l1);
         js.setPreferredSize(new Dimension(300, 100));
 
@@ -56,16 +71,16 @@ public class MyList extends JFrame implements ActionListener{
 
     }
 
-    public void actionPerformed(ActionEvent ae){
-        if("clear".equals(ae.getActionCommand())){
+    public void actionPerformed(ActionEvent ae) {
+        if ("clear".equals(ae.getActionCommand())) {
             listModel.removeAllElements();
-        } else if("remove".equals(ae.getActionCommand())){
+        } else if ("remove".equals(ae.getActionCommand())) {
             ret = l1.getSelectedIndex();
             listModel.remove(ret);
         } else {
             String select = t1.getText();
             Object obj = select;
-            listModel.add(0,obj);
+            listModel.add(0, obj);
         }
     }
 
