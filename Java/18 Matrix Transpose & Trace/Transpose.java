@@ -1,4 +1,23 @@
-//TODO OUTPUT
+/*
+ AIM
+ Write a program to find trace and transpose of a matrix
+
+ ALGORITHM
+1. Start
+2. Input:
+   - Get matrix dimensions from the user.
+   - Create the matrix.
+   - Fill the matrix with elements.
+3. Transpose and Trace:
+   - Simultaneously:
+      - Create the transpose matrix by swapping elements.
+      - Calculate the trace of the original matrix.
+4. Output:
+   - Print the transpose matrix.
+   - Print the trace.
+5. Stop
+
+ */
 
 import java.util.Scanner;
 
@@ -36,7 +55,7 @@ public class Transpose {
             System.out.println("\nGiven Matrix is : ");
             for (int i = 0; i < r; i++) {
                 for (int j = 0; j < c; j++) {
-                    System.out.print(matrix[i][j]);
+                    System.out.print(matrix[i][j]+" ");
                 }
                 System.out.println();
             }
@@ -57,7 +76,7 @@ public class Transpose {
             System.out.println("\nTranspose matrix ");
             for (int i = 0; i < c; i++) {
                 for (int j = 0; j < r; j++) {
-                    System.out.print(transpose[i][j]);
+                    System.out.print(transpose[i][j]+" ");
                 }
                 System.out.println();
             }

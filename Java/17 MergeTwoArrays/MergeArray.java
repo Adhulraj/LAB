@@ -1,4 +1,22 @@
-//TODO: OUTPUT
+
+/* 
+
+AIM
+
+To  write a program to merge two arrays
+
+ALGORTHM
+1. Start
+2. Gather input arrays:
+   - Get sizes of arrays a and b from the user.
+   - Fill arrays a and b with elements entered by the user.
+3. Merge:
+   - Create a new array c with size equal to the sum of sizes of a and b.
+   - Combine elements of arrays a and b into array c.
+4. Output:
+   - Print the merged array c.
+5. Stop
+*/
 
 import java.util.Arrays;
 import java.util.Scanner;
