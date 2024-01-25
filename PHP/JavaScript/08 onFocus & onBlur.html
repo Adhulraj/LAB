@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>onFocus onBlur</title>
+  </head>
+  <body>
+    <p>
+      When you enter the input field a function is called which sets the
+      background color to yellow. When you leave the input field a function is
+      triggered which sets the background color to red
+    </p>
+    Enter you name: <input type="text" id="myInput" onfocus="focusFun()" onblur="blurFun()">
+    <script>
+        function focusFun(){
+            document.getElementById('myInput').style.background="yellow";
+        }
+        function blurFun(){
+            document.getElementById('myInput').style.background="red"
+        }
+    </script>
+  </body>
+</html>

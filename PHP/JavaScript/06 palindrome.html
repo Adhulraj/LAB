@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Javascript Palindrome</title>
+    </head>
+    <body>
+        <script>
+            function validatePalin(str){
+                const len = str.length;
+                var flag = true;
+                for(let i = 0; i < len/2; i++){
+                    if(str[i] != str[len-i-1]){
+                        alert('It is not a palindrome');
+                        flag = false;
+                        break;
+                    }
+                }
+                if(flag){
+                    alert("It is a palindrome")
+                }
+            }
+            const string = prompt("Enter a string: ");
+            const value = validatePalin(string)
+            console.log(value)
+        </script>
+    </body>
+</html>
