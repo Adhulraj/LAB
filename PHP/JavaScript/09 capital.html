@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h3>Select a Country from the list</h3>
+        <select name="" id="mySelect" onChange="display()">
+            <option value="New Delhi">India</option>
+            <option value="Beijing">China</option>
+            <option value="London">UK</option>
+            <option value="Dublin">Ireland</option>
+        </select>
+        <br><br>
+        <input type="text" id="txt">
+        <script>
+            function display(){
+                var x = document.getElementById('mySelect').value
+                document.getElementById('txt').value = x;
+            }
+        </script>
+    </body>
+</html>
