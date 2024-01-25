@@ -1,3 +1,4 @@
+#       PRIME NUMBERS
 #AIM
 #   Shell script to find prime numbers up to a given number 
 

@@ -1,3 +1,4 @@
+#       FACTORIAL 
 #AIM
 #   Shell script find the factorial of a given number
 

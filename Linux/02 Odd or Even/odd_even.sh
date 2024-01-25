@@ -1,3 +1,4 @@
+#       ODD OR EVEN
 #AIM
 # To write a shell script to find if given number is odd or even
 

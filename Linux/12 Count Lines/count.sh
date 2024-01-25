@@ -1,3 +1,4 @@
+#       NUMBER OF LINES , WORDS AND CHARACTERS IN A FILE
 #AIM
 #   Shell Script to count number of lines , words and characters in an input file
 

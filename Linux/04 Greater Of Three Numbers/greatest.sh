@@ -1,3 +1,4 @@
+#       GREATER OF 3 NUMBERS
 #AIM
 #   A shell script to find the greatest of three numbers
 

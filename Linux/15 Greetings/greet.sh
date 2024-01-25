@@ -1,3 +1,5 @@
+#   GREETINGS BASED ON TIME 
+
 #AIM
 #   Shell script which when executed displays the message Good Morning/Good aftemoon /Good Evening depending on the time it gets executed
 

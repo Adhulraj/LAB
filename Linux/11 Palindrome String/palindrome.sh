@@ -1,3 +1,4 @@
+#       PALINDROME STRING
 #AIM
 # Shell script to reverse a string and check whether a given string is palindrome or not
 

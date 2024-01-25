@@ -1,3 +1,4 @@
+#           MEAN AND STANDARD DEVIATION
 #AIM
 #   A shell script to compute mean and standard deviation of three numbers
 

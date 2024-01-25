@@ -1,3 +1,4 @@
+#       ARMSTRONG OR NOT
 #AIM
 #   Shell script to check whether a given number is Armstrong or not
 

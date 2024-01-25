@@ -1,3 +1,4 @@
+#               SUM OF DIGITS
 # AIM
 #    Shell script to find sum of all digits from a given number
 
