@@ -11,6 +11,7 @@
 #               If n2 is greater than n3, declare n2 as the greatest.
 # Step 05: If none of the above conditions are met, n3 must be the greatest.
 # Step 06 :STOP
+
 echo "Enter three numbers "
 read n1
 read n2
