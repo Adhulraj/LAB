@@ -9,8 +9,8 @@
 # Step 03: Calculate mean
 # Step 04: Calculate x, y, z using (x-mean)**2
 # Step 05: Find Standard deviation by sqrt((x+y+z)/3)
-# Step 04: Display the output
-# Step 05: STOP
+# Step 06: Display the output
+# Step 07: STOP
 
 echo "Enter the numbers"
 read n1
