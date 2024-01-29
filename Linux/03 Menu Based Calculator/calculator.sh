@@ -37,7 +37,8 @@ while
             echo -e "\nThe result is $(( $num1 * $num2))"
         ;;
         4)
-            echo -e "\nThe result is $(( $num1 / $num2))"
+            result=$( echo "scale=2; $num1 / $num2" |bc)
+            echo -e "\nThe result is $result"
         ;;
         *)
             echo -e "\nInvalid Option"
