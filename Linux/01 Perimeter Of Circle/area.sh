@@ -1,6 +1,6 @@
-#       PERIMETER OF CIRCLE
+#       AREA & PERIMETER OF CIRCLE
 #AIM
-#
+# To write a script to find the area of a circle
 #
 
 #ALGORITHM
