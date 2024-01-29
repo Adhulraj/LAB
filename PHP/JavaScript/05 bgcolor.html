@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Background Color</title>
+    </head>
+    <body>
+        <h1>Change Background Color</h1>
+        <script>
+            var bgColor = ['red', 'green', 'blue', 'yellow', 'cyan', 'orange', 'violet', 'pink']
+            function myArray(id){
+                document.bgColor=bgColor[Number(id)];
+            }
+        </script>
+        <br>
+        <form action="">
+            <input type="button" id="0" value="change color" onclick="myArray(this.id)
+            this.id = String(Number(this.id) + 1)
+             ">
+        </form>
+    </body>
+</html>

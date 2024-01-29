@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <h1>Verify Valid Password</h1>
+        <form onsubmit="verifyPassword()">
+            <td>Enter Password</td>
+            <input type="password" id="pwd" name="red" value="">
+            <span id="message" style="column-rule: red;"></span>
+            <br><br>
+            <td>Reenter Password</td>
+            <input type="password" id="pwd2" name="red2" value="">
+            <input type="submit" value="submit">
+            <input type="reset" value="Reset">
+        </form>
+        <script>
+            function verifyPassword(){
+                var pw = document.getElementById('pwd').value
+                var pw2 = document.getElementById('pwd2').value
+                if(pw == ""){
+                    document.getElementById('message').innerHTML = "Fill the password field"
+                    return false
+                }
+                if(pw.length < 8){
+                    document.getElementById('message').innerHTML = "Password length must be 8 character"
+                    return false
+                }
+                if( pw != pw2){
+                    document.getElementById('message').innerHTML = "Password missmatch"
+                    return false
+                }
+                else {
+                    alert("Password is correct")
+                    return true
+                }
+            }
+        </script>
+    </body>
+</html>
