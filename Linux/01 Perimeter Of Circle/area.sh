@@ -1,4 +1,4 @@
-#       AREA & PERIMETER OF CIRCLE
+#       PERIMETER OF CIRCLE
 #AIM
 # To write a script to find the area of a circle
 #
