@@ -5,8 +5,8 @@
 #ALGORITHM
 
 # Step 01: START
-# Step 02: The script asks the user for a number.
-# Step 03: It sets a result to 1
+# Step 02: ask the user for a number.
+# Step 03: set a result to 1
 # Step 04: Counts down from the given number to 1:
 #    - Multiplies the result by the current number
 # Step 05: Show the Factorial
