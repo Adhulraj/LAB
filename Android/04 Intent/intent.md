@@ -2,7 +2,7 @@
 
 ### PROGRAM
 activity_main.xml
-```{code-block} xml
+```xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -26,7 +26,7 @@ activity_main.xml
 ```
 
 activity_main2.xml
-```{code-block} xml
+```xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -43,7 +43,7 @@ activity_main2.xml
 ```
 
 MainActivity.java
-```{code-block} java
+```java
 
 public class MainActivity extends AppCompatActivity {
     Button btn;
