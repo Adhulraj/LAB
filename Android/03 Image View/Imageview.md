@@ -1,6 +1,6 @@
-## 04       IMAGE VIEW
+## 03       IMAGE VIEW
 ### AIM
-    
+
 ### PROGRAM
 activity_main.xml
 ```xml
