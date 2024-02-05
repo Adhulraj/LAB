@@ -1,5 +1,6 @@
+##  02              BACKGROUND IMAGE    
 ### AIM
-
+    To write a program to change the background image of an activity
 ### PROGRAM
 activity_main.xml
 ```xml

@@ -1,5 +1,6 @@
+##  04          INTENT
 ### AIM
-
+    Starting another activity from your own activity
 ### PROGRAM
 activity_main.xml
 ```xml
