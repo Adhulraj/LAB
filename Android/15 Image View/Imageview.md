@@ -1,4 +1,4 @@
-## 03       IMAGE VIEW
+##        IMAGE VIEW
 ### AIM
 
 ### PROGRAM
