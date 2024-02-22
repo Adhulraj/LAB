@@ -1,12 +1,38 @@
-package com.example.checkbox;
+## CHECKBOX
+### AIM
+    6. Write a Program to check the items listed
+### PROGRAM
+activity_main.xml
+```xml
 
-import androidx.appcompat.app.AppCompatActivity;
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza"/>
 
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.Toast;
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burger" />
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coffee"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"/>
+```
+
+
+
+MainActivity.java
+```java
 
 public class MainActivity extends AppCompatActivity {
     Button btn;
@@ -36,3 +62,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+```

@@ -2,7 +2,7 @@
 
 ### AIM
 
-    Write a program to Get IP Address of the device
+   9. Write a program to Get IP Address of the device
 
 ### PROGRAM
 

@@ -1,6 +1,6 @@
 ## FETCH DATA
 ### AIM
-    Fetch data from an EditText and display it in a TextView
+    7. Fetch data from an EditText and display it in a TextView
 ### PROGRAM
 activity_main.xml
 ```xml
