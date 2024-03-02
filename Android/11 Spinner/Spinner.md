@@ -8,14 +8,6 @@
 activity_main.xml
 ```xml
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
@@ -33,9 +25,6 @@ activity_main.xml
         android:id="@+id/spinner"
         android:layout_width="wrap_content"
         android:layout_height="43dp" />
-
-</LinearLayout>
-
 ```
 
 MainActivity.java
