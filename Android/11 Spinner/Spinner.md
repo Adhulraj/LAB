@@ -18,13 +18,12 @@ activity_main.xml
         android:id="@+id/btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:baselineAligned="false"
         android:text="Add" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="wrap_content"
-        android:layout_height="43dp" />
+        android:layout_height="wrap_content" />
 ```
 
 MainActivity.java
