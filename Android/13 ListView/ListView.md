@@ -1,7 +1,7 @@
-## 01                        ListView
+## 13                        ListView
 
 ### AIM
-    Write a Program to Display the items in a list
+    To write a Program to display the items in a list
 
 ### PROGRAM
 
@@ -9,12 +9,10 @@ activity_main.xml
 
 ```xml
 
-    <Button
-        android:id="@+id/btn"
+    <ListView
+        android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:baselineAligned="false"
-        android:text="Close App" />
+        android:layout_height="wrap_content" />
 
 ```
 

@@ -1,7 +1,7 @@
-## 01                        SPINNER
+## 12                        ALERT BOX
 
 ### AIM
-    To write a program to spin the four items
+    To write a program to display an alert box with OK and Cancel
 
 ### PROGRAM
 
