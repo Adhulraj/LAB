@@ -1,4 +1,4 @@
-## 14                        Menu Program
+## 14                        MENU PROGRAM
 
 ### AIM
     To write a Program to create a menu with three menu items

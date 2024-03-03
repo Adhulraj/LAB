@@ -1,7 +1,7 @@
 ## 13                        ListView
 
 ### AIM
-    To write a Program to Display the items in a list
+    To write a Program to display the items in a list
 
 ### PROGRAM
 
