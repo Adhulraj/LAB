@@ -15,19 +15,28 @@ Step 07: STOP
 import java.util.Scanner;
 
 public class SumAndReverse {
+
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.print("Enter the number : ");
-        int num = s.nextInt();
+        System.out.print("Enter a number : ");
+        int n = s.nextInt();
+        s.close();
 
-        int sum=0, rev=0;
-        for(int i=num; i!=0; i/=10){
-            int dig= i%10;
-            sum +=dig;
-            rev = (rev*10)+dig;
-        }
-        System.out.println("The sum of digits is "+sum+"\nReverse of the number is "+rev);
+        SumAndReverse obj = new SumAndReverse();
+        obj.calculateSumAndReverse(n);
     }
+
+    public void calculateSumAndReverse(int n) {
+        int sum = 0, rev = 0;
+        for (int i = n; i > 0; i /= 10) {
+            int rem = i % 10;
+            sum += rem;
+            rev = (rev * 10) + rem;
+        }
+        System.out.println("Sum of digits : " + sum);
+        System.out.println("Reverse of the number : " + rev);
+    }
+
 }
 
 /*

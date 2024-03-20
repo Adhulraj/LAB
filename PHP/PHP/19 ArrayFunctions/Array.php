@@ -15,10 +15,15 @@ AIM
     </head>
     <body>
         <h2>Array Functions in PHP</h2>
+        <form action="" method="post">
+            <input type="text" name="search" >
+            <input type="submit" value="submit" name="submit">
+        </form>
     </body>
  </html>
 
  <?php
+if($_POST){
 function display($array){
     foreach ($array as $item) {
         echo $item." ";
@@ -39,4 +44,10 @@ display($arr);
 echo "<br><br><b>Array after deleting last element :</b></br>";
 unset($arr[count($arr)-1]);
 display($arr);
+$search = $_POST['search'];
+if(in_array($search, $arr))
+echo "<br><br>$search is in the array";
+else
+echo "<br><br>$search is not in the array";
+}
  ?>
